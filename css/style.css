@@ -1,0 +1,112 @@
+@font-face {
+   font-family: "HackedKerX";
+   src: url("../fonts/hackFonts/HackedKerX.ttf") format("truetype");
+}
+
+* {box-sizing: border-box; margin: 0; padding: 0; list-style: decimal;}
+
+body {
+   font-family: sans-serif;
+   font-size: 15px;
+   line-height: 1.6em;
+}
+
+/* HEADER */
+.header {
+   background: linear-gradient(to bottom, #000, #ff0000, #fff);
+   padding: 30px 10px 50px 10px;
+}
+.container {
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+.header_inner {
+   display: flex;
+   justify-content: space-between;
+   min-height: 100px;
+   align-items: center;
+   margin-bottom: 30px;
+}
+.header_author {
+   font-family: "HackedKerX", sans-serif;
+}
+.header_logo img{width: 100px;}
+.header_tg img{width: 25px;}
+.header_content {text-align: center;}
+.header_title {
+   text-transform: uppercase;
+   font-size: 40px;
+   font-weight: 700;
+   color: #000;
+   margin-bottom: 15px;
+   font-family: "HackedKerX", sans-serif;
+}
+.header_subtitle {
+   font-size: 18px;
+   font-weight: 400;
+   font-family: "HackedKerX", sans-serif;
+}
+
+
+/* MAIN */
+.main {padding: 60px 0;}
+.main_inner {
+   display: flex;
+   flex-wrap: wrap;
+}
+.main_col {
+   flex: 0 1 33.333%;
+   padding: 0 30px;
+}
+.main_item {margin-bottom: 40px;}
+.main_title {
+   margin-bottom: 20px;
+   font-size: 20px;
+   line-height: 1.1em;
+   font-weight: 900;
+}
+.menu_links {padding-left: 15px;}
+.menu_links li a {
+   color: #000;
+   transition: all .2s;
+   display: inline-block;
+   text-decoration: none;
+   color: red;
+   font-size: 15px;
+   font-weight: 700;
+}
+.menu_links li a:hover {
+   text-decoration: underline;
+}
+
+
+/* FOOTER */
+.footer {
+   background: linear-gradient(to top, #000, #ff0000, #fff);
+}
+.footer_inner {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100px;
+   gap: 20px; 
+}
+.footer_item {
+   font-size: 13px;
+   text-transform: uppercase;
+   font-weight: 400;
+   font-family: "HackedKerX", sans-serif;
+}
+.footer_item img {width: 60px;}
+
+
+/* MEDIA */
+@media (max-width: 992px) {
+   .main_inner {flex-direction: column;}
+   .main_col {flex: 0 1 100%;}
+}
+@media (max-width: 576px) {
+   .header_title {font-size: 30px; line-height: 1.2em;}
+   .main_col {padding: 0 20px;}
+}
